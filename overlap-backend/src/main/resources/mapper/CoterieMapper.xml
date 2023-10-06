@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ov.mapper.CoterieMapper">
+
+    <resultMap id="BaseResultMap" type="com.ov.pojo.Coterie">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="coterieNum" column="coterie_num" jdbcType="VARCHAR"/>
+            <result property="title" column="title" jdbcType="VARCHAR"/>
+            <result property="userId" column="user_id" jdbcType="BIGINT"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="tags" column="tags" jdbcType="VARCHAR"/>
+            <result property="avatarUrl" column="avatar_url" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="isEncrypted" column="is_encrypted" jdbcType="TINYINT"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+            <result property="maxNum" column="max_num" jdbcType="INTEGER"/>
+            <result property="curNum" column="cur_num" jdbcType="INTEGER"/>
+            <result property="isDelete" column="is_delete" jdbcType="TINYINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,coterie_num,title,user_id,
+        description,tags,avatar_url,
+        password,is_encrypted,status,
+        max_num,cur_num,is_delete,
+        create_time,update_time
+    </sql>
+</mapper>

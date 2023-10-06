@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/overlap?serverTimezone=GMT%2b8
+    username: overlap
+    password: jGhJpBCak8w2CGBy
+  redis:
+    password: Ovtalove5208
+    host: 47.99.49.6
+    port: 6379
+    #    默认使用 lettuce，但仍需要手动配置
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 1
+        max-wait: 1000ms
+    database: 0
+
+cors:
+  origins: http://overlap.ovta.love
