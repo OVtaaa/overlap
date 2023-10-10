@@ -6,7 +6,7 @@ spring:
     password: 
   redis:
     password: 
-    host: 47.99.49.6
+    host: 
     port: 6379
     #    默认使用 lettuce，但仍需要手动配置
     lettuce:
