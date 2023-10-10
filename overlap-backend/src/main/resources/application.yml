@@ -9,11 +9,6 @@ spring:
     store-type: redis
     timeout: 86400
 
-#  mail:
-#    host: smtp.qq.com
-#    username: 3204864983@qq.com
-#    password: njnutivuqblgdgdb
-
 server:
   port: 8081
   servlet:
